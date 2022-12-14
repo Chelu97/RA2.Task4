@@ -1,0 +1,77 @@
+@use 'sass:math';
+@import "variables";
+
+body{
+    margin: auto;
+    font-family: "apercu",sans-serif !important;
+    font-size: $text-size-primary;
+    font-weight: 300;
+    background: $bg-primary;
+    color: #222;
+    line-height: 200%;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#creator {
+    scroll-margin-top: 50px;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a{
+    color:$color-primary;
+    text-decoration: none;
+
+}
+
+
+li{
+    list-style: none;
+}
+
+.style-2 {
+    $menu-color-1: $color-learn;
+    $menu-color-2: $color-learn-2;
+    $menu-color-3: $color-learn-3;
+}
+
+.style-1 {
+    $menu-color-1: $color-inspire;
+    $menu-color-2: $color-inspire-2;
+    $menu-color-3: $color-inspire-3;
+}
+
+input, select, textarea, button {
+    font-family: "apercu",sans-serif;
+    font-size: $text-size-primary;
+}
+
+input{
+    border: none;
+}
+
+.ico-svg {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    fill: currentColor;
+    transition: all .3s;
+}
+
+li.is-active {
+    font-weight: bold;
+}
+li.is-active a {
+    color: $color-white;
+    border-color: $color-white;
+}
